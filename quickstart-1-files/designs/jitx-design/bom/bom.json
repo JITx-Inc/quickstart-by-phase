@@ -1,0 +1,219 @@
+{
+	"proj-name":	"jitx-design",
+	"headers":	[{
+			"field":	"status",
+			"name":	"Status",
+			"width":	10
+		}, {
+			"field":	"_quantity",
+			"name":	"Qty",
+			"width":	5
+		}, {
+			"field":	"insts",
+			"name":	"References",
+			"width":	10
+		}, {
+			"field":	"mpn",
+			"name":	"MPN",
+			"width":	10
+		}, {
+			"field":	"manufacturer",
+			"name":	"Manufacturer",
+			"width":	10
+		}, {
+			"field":	"description",
+			"name":	"Description",
+			"width":	20
+		}, {
+			"field":	"vendor",
+			"name":	"Supplier",
+			"width":	10
+		}, {
+			"field":	"sku",
+			"name":	"SKU",
+			"width":	10
+		}, {
+			"field":	"datasheet",
+			"name":	"Datasheet",
+			"width":	10
+		}, {
+			"field":	"_preferred",
+			"name":	"Preferred",
+			"width":	5
+		}],
+	"new_bom":	{
+		"rows":	[{
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"63mW Thick Film Resistors 50V ±100ppm/℃ ±1% 10kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"name":	"element"
+						},
+						"ref":	"R1",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TE-Connectivity-CRGCQ0402F10K_C2074093.pdf",
+				"manufacturer":	"TE CONNECTIVITY",
+				"mpn":	"CRGCQ0402F10K",
+				"vendor":	"Arrow",
+				"sku":	"CRGCQ0402F10K",
+				"price":	0.0647,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	10000,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"mounting":	"smd",
+					"case":	["0402", "0603"],
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"CAP CER 0.1UF 10V X5R 0402",
+				"insts":	[{
+						"inst":	{
+							"name":	"element"
+						},
+						"ref":	"C1",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://datasheets.avx.com/cx5r.pdf",
+				"manufacturer":	"KYOCERA AVX",
+				"mpn":	"0402ZD104KAT4A",
+				"vendor":	"Arrow",
+				"sku":	"0402ZD104KAT4A",
+				"price":	0.0014,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	1e-07,
+					"tolerance":	0.1,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	6,
+					"category":	"capacitor",
+					"mounting":	"smd",
+					"case":	["0402", "0603"],
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 22K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"name":	"element"
+						},
+						"ref":	"R2",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf",
+				"manufacturer":	"BOURNS",
+				"mpn":	"CR0402-FX-2202GLF",
+				"vendor":	"Arrow",
+				"sku":	"CR0402-FX-2202GLF",
+				"price":	0.0384,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	22000,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"mounting":	"smd",
+					"case":	["0402", "0603"],
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}],
+		"entries":	[{
+			}, {
+			}, {
+			}]
+	},
+	"metrics":	[{
+			"name":	"Line Items",
+			"value":	3
+		}, {
+			"name":	"Components",
+			"value":	3
+		}, {
+			"name":	"Cost",
+			"value":	"$0.10"
+		}],
+	"is_update":	false,
+	"old_bom":	{
+		"rows":	[{
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"63mW Thick Film Resistors 50V ±100ppm/℃ ±1% 10kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"name":	"element"
+						},
+						"ref":	"R1",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TE-Connectivity-CRGCQ0402F10K_C2074093.pdf",
+				"manufacturer":	"TE CONNECTIVITY",
+				"mpn":	"CRGCQ0402F10K",
+				"vendor":	"Arrow",
+				"sku":	"CRGCQ0402F10K",
+				"price":	0.0647,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	10000,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"mounting":	"smd",
+					"case":	["0402", "0603"],
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"CAP CER 0.1UF 10V X5R 0402",
+				"insts":	[{
+						"inst":	{
+							"name":	"element"
+						},
+						"ref":	"C1",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://datasheets.avx.com/cx5r.pdf",
+				"manufacturer":	"KYOCERA AVX",
+				"mpn":	"0402ZD104KAT4A",
+				"vendor":	"Arrow",
+				"sku":	"0402ZD104KAT4A",
+				"price":	0.0014,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	1e-07,
+					"tolerance":	0.1,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	6,
+					"category":	"capacitor",
+					"mounting":	"smd",
+					"case":	["0402", "0603"],
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}],
+		"entries":	[{
+			}, {
+			}]
+	}
+}
