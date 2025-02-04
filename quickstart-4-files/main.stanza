@@ -7,7 +7,7 @@ defpackage main :
   import jitx/parts
 
   import helpers
-  import jsl/symbols/net-symbols
+  import jsl
 
   import ethernet-io/controller
 
@@ -39,10 +39,10 @@ pcb-module top-level :
   inst core : communications-core
   place(core.usb-if.USBC.J) at loc(10.0, -30.5) on Top
 
-  geom(core.GND) :
+  geom(core.GND):
     copper-pour(LayerIndex(1), isolate = 0.125, rank = 1) = board-shape
     copper-pour(LayerIndex(2), isolate = 0.125, rank = 1) = board-shape
-  geom(core.P3V3) :
+  geom(core.P3V3):
     copper-pour(LayerIndex(3), isolate = 0.125, rank = 1) = board-shape
 ; Set the :
 ;     design-name     - a directory with this name will be created in the "designs" directory

@@ -1,0 +1,4363 @@
+{
+	"proj-name":	"jitx-design",
+	"headers":	[{
+			"field":	"status",
+			"name":	"Status",
+			"width":	10
+		}, {
+			"field":	"_quantity",
+			"name":	"Qty",
+			"width":	5
+		}, {
+			"field":	"insts",
+			"name":	"References",
+			"width":	10
+		}, {
+			"field":	"mpn",
+			"name":	"MPN",
+			"width":	10
+		}, {
+			"field":	"manufacturer",
+			"name":	"Manufacturer",
+			"width":	10
+		}, {
+			"field":	"description",
+			"name":	"Description",
+			"width":	20
+		}, {
+			"field":	"vendor",
+			"name":	"Supplier",
+			"width":	10
+		}, {
+			"field":	"sku",
+			"name":	"SKU",
+			"width":	10
+		}, {
+			"field":	"datasheet",
+			"name":	"Datasheet",
+			"width":	10
+		}, {
+			"field":	"_preferred",
+			"name":	"Preferred",
+			"width":	5
+		}],
+	"new_bom":	{
+		"rows":	[{
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"Inductor, 1.0uH, 0.039 Ω DC",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"pwr-mng"
+									}
+								},
+								"field":	{
+									"name":	"DCDC-1v2"
+								}
+							},
+							"field":	{
+								"name":	"L"
+							}
+						},
+						"ref":	"L5",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\power-systems\\src\\DC-DC\\buck.stanza",
+							"line":	117,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"pwr-mng"
+									}
+								},
+								"field":	{
+									"name":	"DCDC-3v3"
+								}
+							},
+							"field":	{
+								"name":	"L"
+							}
+						},
+						"ref":	"L4",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\power-systems\\src\\DC-DC\\buck.stanza",
+							"line":	117,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404081011_Coilcraft-XFL3012-102MEC_C3911750.pdf",
+				"manufacturer":	"Coilcraft",
+				"mpn":	"XFL3012-102MEC",
+				"vendor":	"Mouser",
+				"sku":	"XFL3012-102MEC",
+				"price":	2.08,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 4.7K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"R-t"
+							}
+						},
+						"ref":	"R11",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\FTDI\\src\\DebugIF.stanza",
+							"line":	135,
+							"column":	6
+						}
+					}],
+				"datasheet":	"https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf",
+				"manufacturer":	"BOURNS",
+				"mpn":	"CR0402-FX-4701GLF",
+				"vendor":	"Arrow",
+				"sku":	"CR0402-FX-4701GLF",
+				"price":	0.0012,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	4700,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"Inductor, 10.0uH, 0.056 Ω DC",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-5V"
+									}
+								},
+								"field":	{
+									"name":	"L"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"L3",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Taiyo-Yuden-NRS5040T100MMGJ_C222949.pdf",
+				"manufacturer":	"Taiyo Yuden  Inc",
+				"mpn":	"NRS5040T100MMGJ",
+				"vendor":	"JLCPCB",
+				"sku":	"NRS5040T100MMGJ",
+				"price":	0.135142857,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"±5% Single 4.85V~5.36V 500mW 5.1V SOD-123  Zener Diodes ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"core"
+							},
+							"field":	{
+								"name":	"zener"
+							}
+						},
+						"ref":	"D1",
+						"fileinfo":	{
+							"filename":	"c:\\Users\\Duncan\\Desktop\\ethernet_io\\main.stanza",
+							"line":	22,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/1811131655_onsemi-MMSZ4689T1G_C236187.pdf",
+				"manufacturer":	"ON Semiconductor",
+				"mpn":	"MMSZ4689T1G",
+				"vendor":	"JLCPCB",
+				"sku":	"MMSZ4689T1G",
+				"price":	0.036,
+				"preferred":	false,
+				"query_properties":	{
+					"manufacturer":	"ON Semiconductor",
+					"mpn":	"MMSZ4689T1G",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"USB Type-C SMD Connectors ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"usb-if"
+									}
+								},
+								"field":	{
+									"name":	"USBC"
+								}
+							},
+							"field":	{
+								"name":	"J"
+							}
+						},
+						"ref":	"J1",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\connectors\\src\\components\\USB\\USBTypeC.stanza",
+							"line":	104,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2407021105_MOLEX-2012670005_C565324.pdf",
+				"manufacturer":	"MOLEX",
+				"mpn":	"2012670005",
+				"vendor":	"Arrow",
+				"sku":	"2012670005",
+				"price":	1.4592,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 4.7nF X7R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"usb-if"
+									}
+								},
+								"field":	{
+									"name":	"shield-term"
+								}
+							},
+							"field":	{
+								"name":	"C"
+							}
+						},
+						"ref":	"C1",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-1v2"
+									}
+								},
+								"field":	{
+									"name":	"cout-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C31",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"cout-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C28",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2211282000_Taiyo-Yuden-UMK105B7472MV-F_C2183859.pdf",
+				"manufacturer":	"Taiyo Yuden  Inc",
+				"mpn":	"UMK105B7472MV-F",
+				"vendor":	"Arrow",
+				"sku":	"UMK105B7472MV-F",
+				"price":	0.016,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	4.7e-09,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	6,
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"6.3V 2.2uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"EEPROM"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C18",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2407081117_YAGEO-CC0402MRX5R5BB225_C106860.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"CC0402MRX5R5BB225",
+				"vendor":	"Arrow",
+				"sku":	"CC0402MRX5R5BB225",
+				"price":	0.0047,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	2.2e-06,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	6,
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 13pF C0G ±5% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"ctl"
+											}
+										},
+										"field":	{
+											"name":	"debug-if"
+										}
+									},
+									"field":	{
+										"name":	"resonator"
+									}
+								},
+								"field":	{
+									"name":	"load-caps"
+								}
+							},
+							"index":	1
+						},
+						"ref":	"C16",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\jsl\\src\\circuits\\CrystalResonator.stanza",
+							"line":	81,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"ctl"
+											}
+										},
+										"field":	{
+											"name":	"debug-if"
+										}
+									},
+									"field":	{
+										"name":	"resonator"
+									}
+								},
+								"field":	{
+									"name":	"load-caps"
+								}
+							},
+							"index":	0
+						},
+						"ref":	"C15",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\jsl\\src\\circuits\\CrystalResonator.stanza",
+							"line":	81,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/1810261546_Samsung-Electro-Mechanics-CL10C130JB8NNNC_C170137.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL10C130JB8NNNC",
+				"vendor":	"Arrow",
+				"sku":	"CL10C130JB8NNNC",
+				"price":	0.0024,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.05,
+					"capacitance":	1.3000000000000015e-11,
+					"_sort":	["rated-voltage"],
+					"temperature-coefficient.code":	"C0G",
+					"min-rated-voltage":	6.6,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"category":	"capacitor",
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thick Film Resistors ±100ppm/℃ ±1% 16.9kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-5V"
+									}
+								},
+								"field":	{
+									"name":	"IC"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R14",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-AC0402FR-0716K9L_C226808.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"AC0402FR-0716K9L",
+				"vendor":	"Arrow",
+				"sku":	"AC0402FR-0716K9L",
+				"price":	0.004,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.01,
+					"resistance":	16900,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"6.3V 10uF X5R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-5V"
+									}
+								},
+								"field":	{
+									"name":	"cout-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C24",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-5V"
+									}
+								},
+								"field":	{
+									"name":	"cout-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C23",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Walsin-Tech-Corp-0603X106K6R3CT_C123607.pdf",
+				"manufacturer":	"WALSIN",
+				"mpn":	"0603X106K6R3CT",
+				"vendor":	"Arrow",
+				"sku":	"0603X106K6R3CT",
+				"price":	0.0429,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.1,
+					"min-rated-voltage":	1.683,
+					"capacitance":	1.0000000000000006e-05,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"10V 3.3uF X5R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-5V"
+									}
+								},
+								"field":	{
+									"name":	"cin-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C21",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-5V"
+									}
+								},
+								"field":	{
+									"name":	"cin-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C20",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A335KP8NNNC_C51412.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL10A335KP8NNNC",
+				"vendor":	"Arrow",
+				"sku":	"CL10A335KP8NNNC",
+				"price":	0.0205,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.1,
+					"min-rated-voltage":	8.4,
+					"min-capacitance":	2.7000000000000017e-06,
+					"max-capacitance":	3.3000000000000019e-06,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thick Film Resistors ±100ppm/℃ ±1% 12kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R4",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404101533_YAGEO-RC0402FR-1312KL_C4167915.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RC0402FR-1312KL",
+				"vendor":	"Arrow",
+				"sku":	"RC0402FR-1312KL",
+				"price":	0.0019,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.01,
+					"resistance":	12000,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES 2K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R9",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf",
+				"manufacturer":	"SEI",
+				"mpn":	"RMCF0402FT2K00",
+				"vendor":	"Arrow",
+				"sku":	"RMCF0402FT2K00",
+				"price":	0.0027,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	2000,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thin Film Resistor ±25ppm/℃ ±0.1% 4.12kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"fb-div"
+								}
+							},
+							"field":	{
+								"name":	"r-lo"
+							}
+						},
+						"ref":	"R22",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\voltage-divider\\src\\circuits.stanza",
+							"line":	40,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TE-Connectivity-RP73PF1E4K12BTDF_C2145825.pdf",
+				"manufacturer":	"TE CONNECTIVITY",
+				"mpn":	"RP73PF1E4K12BTDF",
+				"vendor":	"Arrow",
+				"sku":	"RP73PF1E4K12BTDF",
+				"price":	0.0878,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.001,
+					"_exist":	["tcr.pos", "tcr.neg"],
+					"resistance":	4120,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"0603 82 nF 50 V ±5 % Tolerance X7R Surface Mount Multilayer Ceramic Capacitor",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-5V"
+									}
+								},
+								"field":	{
+									"name":	"IC"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C19",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://datasheets.avx.com/X7RDielectric.pdf",
+				"manufacturer":	"KYOCERA AVX",
+				"mpn":	"06035C823JAT2A",
+				"vendor":	"Avnet",
+				"sku":	"06035C823JAT2A",
+				"price":	0.239,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.05,
+					"min-rated-voltage":	1.624,
+					"min-capacitance":	5.6000000000000045e-08,
+					"max-capacitance":	8.2000000000000059e-08,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"6.3V 22uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-1v2"
+									}
+								},
+								"field":	{
+									"name":	"cout-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C32",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"cout-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C29",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309061403_Samsung-Electro-Mechanics-CL05A226MQ5QUNC_C105226.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL05A226MQ5QUNC",
+				"vendor":	"Arrow",
+				"sku":	"CL05A226MQ5QUNC",
+				"price":	0.1344,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	0.378,
+					"capacitance":	2.2e-05,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 43K OHM 0.1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-5V"
+									}
+								},
+								"field":	{
+									"name":	"fb-div"
+								}
+							},
+							"field":	{
+								"name":	"r-hi"
+							}
+						},
+						"ref":	"R18",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\voltage-divider\\src\\circuits.stanza",
+							"line":	39,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf",
+				"manufacturer":	"PANASONIC",
+				"mpn":	"ERA-2AEB433X",
+				"vendor":	"DigiKey",
+				"sku":	"ERA-2AEB433X",
+				"price":	0.18,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.001,
+					"_exist":	["tcr.pos", "tcr.neg"],
+					"resistance":	43000,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"Ferrite, 0603, 220Ω @ 100000000000.0 Hz, 0.05 Ω DC",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"filt-VPHY"
+								}
+							},
+							"field":	{
+								"name":	"U"
+							}
+						},
+						"ref":	"L2",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\power-systems\\src\\filters.stanza",
+							"line":	41,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"filt-VPLL"
+								}
+							},
+							"field":	{
+								"name":	"U"
+							}
+						},
+						"ref":	"L1",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\power-systems\\src\\filters.stanza",
+							"line":	41,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-BLM18KG221SN1D_C88980.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"BLM18KG221SN1D",
+				"vendor":	"Arrow",
+				"sku":	"BLM18KG221SN1D",
+				"price":	0.0223,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"null 4.7nF X7R ±5% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-5V"
+									}
+								},
+								"field":	{
+									"name":	"cout-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C22",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201131300_Murata-Electronics-GRM155R71H472JA01D_C913548.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"GRM155R71H472JA01D",
+				"vendor":	"Arrow",
+				"sku":	"GRM155R71H472JA01D",
+				"price":	0.0044,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.05,
+					"min-rated-voltage":	1.683,
+					"capacitance":	4.7e-09,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 7.32KOHM 0.1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-5V"
+									}
+								},
+								"field":	{
+									"name":	"fb-div"
+								}
+							},
+							"field":	{
+								"name":	"r-lo"
+							}
+						},
+						"ref":	"R19",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\voltage-divider\\src\\circuits.stanza",
+							"line":	40,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf",
+				"manufacturer":	"PANASONIC",
+				"mpn":	"ERA-2AEB7321X",
+				"vendor":	"Arrow",
+				"sku":	"ERA-2AEB7321X",
+				"price":	0.0583,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.001,
+					"_exist":	["tcr.pos", "tcr.neg"],
+					"resistance":	7320,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 5.1K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"core"
+								},
+								"field":	{
+									"name":	"usb-if"
+								}
+							},
+							"field":	{
+								"name":	"CC1-R"
+							}
+						},
+						"ref":	"R2",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"core"
+								},
+								"field":	{
+									"name":	"usb-if"
+								}
+							},
+							"field":	{
+								"name":	"CC0-R"
+							}
+						},
+						"ref":	"R1",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf",
+				"manufacturer":	"BOURNS",
+				"mpn":	"CR0402-FX-5101GLF",
+				"vendor":	"Arrow",
+				"sku":	"CR0402-FX-5101GLF",
+				"price":	0.002,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.01,
+					"resistance":	5100,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"7.9V 14V 3.6V DFN-10(1x2.5)  ESD Protection Devices ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"core"
+								},
+								"field":	{
+									"name":	"usb-if"
+								}
+							},
+							"field":	{
+								"name":	"esd-prot"
+							}
+						},
+						"ref":	"U1",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\connectors\\src\\components\\USB\\USBTypeC.stanza",
+							"line":	167,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2302221330_Texas-Instruments-ESD224DQAR_C1981316.pdf",
+				"manufacturer":	"Texas Instruments",
+				"mpn":	"ESD224DQAR",
+				"vendor":	"Arrow",
+				"sku":	"ESD224DQAR",
+				"price":	0.4376,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"63mW Thick Film Resistors 50V ±100ppm/℃ ±1% 10kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"EEPROM"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R13",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"R-b"
+							}
+						},
+						"ref":	"R12",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\FTDI\\src\\DebugIF.stanza",
+							"line":	136,
+							"column":	6
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"do-pu"
+							}
+						},
+						"ref":	"R8",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"clk-pu"
+							}
+						},
+						"ref":	"R7",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"cs-pu"
+							}
+						},
+						"ref":	"R6",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"core"
+								},
+								"field":	{
+									"name":	"pwr-mng"
+								}
+							},
+							"field":	{
+								"name":	"enable-pu"
+							}
+						},
+						"ref":	"R26",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TE-Connectivity-CRGCQ0402F10K_C2074093.pdf",
+				"manufacturer":	"TE CONNECTIVITY",
+				"mpn":	"CRGCQ0402F10K",
+				"vendor":	"Arrow",
+				"sku":	"CRGCQ0402F10K",
+				"price":	0.0647,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	10000,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thick Film Resistors ±100ppm/℃ ±1% 6.98kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-1v2"
+									}
+								},
+								"field":	{
+									"name":	"fb-div"
+								}
+							},
+							"field":	{
+								"name":	"r-hi"
+							}
+						},
+						"ref":	"R24",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\voltage-divider\\src\\circuits.stanza",
+							"line":	39,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-076K98L_C137944.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RC0402FR-076K98L",
+				"vendor":	"Arrow",
+				"sku":	"RC0402FR-076K98L",
+				"price":	0.0009,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.01,
+					"_exist":	["tcr.pos", "tcr.neg"],
+					"resistance":	6980,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 1.21M OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"pwr-mng"
+											}
+										},
+										"field":	{
+											"name":	"DCDC-5V"
+										}
+									},
+									"field":	{
+										"name":	"IC"
+									}
+								},
+								"field":	{
+									"name":	"uvlo-div"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"R15",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+				"manufacturer":	"VISHAY",
+				"mpn":	"CRCW04021M21FKED",
+				"vendor":	"Arrow",
+				"sku":	"CRCW04021M21FKED",
+				"price":	0.048,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.01,
+					"resistance":	1210000,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"ctl"
+											}
+										},
+										"field":	{
+											"name":	"debug-if"
+										}
+									},
+									"field":	{
+										"name":	"ftdi"
+									}
+								},
+								"field":	{
+									"name":	"VPLL-byp"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C14",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"ctl"
+											}
+										},
+										"field":	{
+											"name":	"debug-if"
+										}
+									},
+									"field":	{
+										"name":	"ftdi"
+									}
+								},
+								"field":	{
+									"name":	"VPHY-byp"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C12",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCCIO[3]-byp"
+							}
+						},
+						"ref":	"C10",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCCIO[2]-byp"
+							}
+						},
+						"ref":	"C9",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCCIO[1]-byp"
+							}
+						},
+						"ref":	"C8",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCCIO[0]-byp"
+							}
+						},
+						"ref":	"C7",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCORE[2]-byp"
+							}
+						},
+						"ref":	"C6",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCORE[1]-byp"
+							}
+						},
+						"ref":	"C5",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCORE[0]-byp"
+							}
+						},
+						"ref":	"C4",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VREGIN-byp"
+							}
+						},
+						"ref":	"C2",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://api.kemet.com/component-edge/download/datasheet/C0402C104M8RACTU.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"C0402C104M8RACTU",
+				"vendor":	"Arrow",
+				"sku":	"C0402C104M8RACTU",
+				"price":	0.0415,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	1e-07,
+					"min-rated-voltage":	6.6,
+					"max-rated-voltage":	16,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thick Film Resistors ±100ppm/℃ ±1% 4.22kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-1v2"
+									}
+								},
+								"field":	{
+									"name":	"fb-div"
+								}
+							},
+							"field":	{
+								"name":	"r-lo"
+							}
+						},
+						"ref":	"R25",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\voltage-divider\\src\\circuits.stanza",
+							"line":	40,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0402FR-074K22L_C185410.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RC0402FR-074K22L",
+				"vendor":	"Arrow",
+				"sku":	"RC0402FR-074K22L",
+				"price":	0.0925,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.01,
+					"_exist":	["tcr.pos", "tcr.neg"],
+					"resistance":	4220,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"CAP CER 0.1UF 10V X5R 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-5V"
+									}
+								},
+								"field":	{
+									"name":	"bst-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C25",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://datasheets.avx.com/cx5r.pdf",
+				"manufacturer":	"KYOCERA AVX",
+				"mpn":	"0402ZD104KAT2A",
+				"vendor":	"Arrow",
+				"sku":	"0402ZD104KAT2A",
+				"price":	0.0044,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.1,
+					"min-rated-voltage":	8.4,
+					"capacitance":	1e-07,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW ±300ppm/℃ ±1% 0Ω 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R10",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R5",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"usb-if"
+									}
+								},
+								"field":	{
+									"name":	"shield-term"
+								}
+							},
+							"field":	{
+								"name":	"R"
+							}
+						},
+						"ref":	"R3",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-1v2"
+									}
+								},
+								"field":	{
+									"name":	"IC"
+								}
+							},
+							"field":	{
+								"name":	"pull"
+							}
+						},
+						"ref":	"R23",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\TI-vreg\\src\\components\\TPS6208x.stanza",
+							"line":	119,
+							"column":	6
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"IC"
+								}
+							},
+							"field":	{
+								"name":	"pull"
+							}
+						},
+						"ref":	"R20",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\TI-vreg\\src\\components\\TPS6208x.stanza",
+							"line":	119,
+							"column":	6
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-5V"
+									}
+								},
+								"field":	{
+									"name":	"bst-circ"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"R17",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2207281800_Sunway-SC0402F0000I2ANRH_C3152056.pdf",
+				"manufacturer":	"Sunway",
+				"mpn":	"SC0402F0000I2ANRH",
+				"vendor":	"JLCPCB",
+				"sku":	"SC0402F0000I2ANRH",
+				"price":	0.000357143,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	0,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"10V 4.7uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"ctl"
+											}
+										},
+										"field":	{
+											"name":	"debug-if"
+										}
+									},
+									"field":	{
+										"name":	"ftdi"
+									}
+								},
+								"field":	{
+									"name":	"VPLL-byp"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C13",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"ctl"
+											}
+										},
+										"field":	{
+											"name":	"debug-if"
+										}
+									},
+									"field":	{
+										"name":	"ftdi"
+									}
+								},
+								"field":	{
+									"name":	"VPHY-byp"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C11",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VREGOUT-byp"
+							}
+						},
+						"ref":	"C3",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A475MP5NRNC_C23733.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL05A475MP5NRNC",
+				"vendor":	"Arrow",
+				"sku":	"CL05A475MP5NRNC",
+				"price":	0.0061,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	4.7e-06,
+					"min-rated-voltage":	6.6,
+					"max-rated-voltage":	16,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thin Film Resistor ±25ppm/℃ ±0.1% 26.1kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"fb-div"
+								}
+							},
+							"field":	{
+								"name":	"r-hi"
+							}
+						},
+						"ref":	"R21",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\voltage-divider\\src\\circuits.stanza",
+							"line":	39,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RT0402BRD0726K1L_C728557.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RT0402BRD0726K1L",
+				"vendor":	"Arrow",
+				"sku":	"RT0402BRD0726K1L",
+				"price":	0.1484,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.001,
+					"_exist":	["tcr.pos", "tcr.neg"],
+					"resistance":	26100,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thick Film Resistors ±100ppm/℃ ±1% 357kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"pwr-mng"
+											}
+										},
+										"field":	{
+											"name":	"DCDC-5V"
+										}
+									},
+									"field":	{
+										"name":	"IC"
+									}
+								},
+								"field":	{
+									"name":	"uvlo-div"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"R16",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RC0402FR-07357KL_C309545.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RC0402FR-07357KL",
+				"vendor":	"Arrow",
+				"sku":	"RC0402FR-07357KL",
+				"price":	0.046,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.01,
+					"resistance":	357000,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 1nF X7R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"C-b"
+							}
+						},
+						"ref":	"C17",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\FTDI\\src\\DebugIF.stanza",
+							"line":	137,
+							"column":	6
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309051428_Taiyo-Yuden-UMK105B7102MVHF_C3857081.pdf",
+				"manufacturer":	"Taiyo Yuden  Inc",
+				"mpn":	"UMK105B7102MVHF",
+				"vendor":	"Arrow",
+				"sku":	"UMK105B7102MVHF",
+				"price":	0.0008,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	10,
+					"capacitance":	1e-09,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"6.3V 10uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"pwr-mng"
+									}
+								},
+								"field":	{
+									"name":	"DCDC-1v2"
+								}
+							},
+							"field":	{
+								"name":	"cin-circ"
+							}
+						},
+						"ref":	"C30",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"pwr-mng"
+									}
+								},
+								"field":	{
+									"name":	"DCDC-3v3"
+								}
+							},
+							"field":	{
+								"name":	"cin-circ"
+							}
+						},
+						"ref":	"C27",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL05A106MQ5NUNC",
+				"vendor":	"Arrow",
+				"sku":	"CL05A106MQ5NUNC",
+				"price":	0.027,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	1.65,
+					"capacitance":	1e-05,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"1K 2.5V Microwire Serial EEPROM, SOIC-8 Package",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"EEPROM"
+								}
+							},
+							"field":	{
+								"name":	"EEPROM"
+							}
+						},
+						"ref":	"U3",
+						"fileinfo":	{
+							"filename":	"src\\components\\MC-93LC46CT.stanza",
+							"line":	47,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://ww1.microchip.com/downloads/en/DeviceDoc/20001749K.pdf",
+				"manufacturer":	"Microchip Technology",
+				"mpn":	"93LC46CT-I/SN",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"C"
+							}
+						},
+						"ref":	"U2",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\FTDI\\src\\components\\FT2232HL.stanza",
+							"line":	170,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://ftdichip.com/wp-content/uploads/2024/05/DS_FT2232H.pdf",
+				"manufacturer":	"Future Technology Devices International",
+				"mpn":	"FT2232HL",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-1v2"
+									}
+								},
+								"field":	{
+									"name":	"IC"
+								}
+							},
+							"field":	{
+								"name":	"SW"
+							}
+						},
+						"ref":	"U6",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\TI-vreg\\src\\components\\TPS6208x.stanza",
+							"line":	104,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-3v3"
+									}
+								},
+								"field":	{
+									"name":	"IC"
+								}
+							},
+							"field":	{
+								"name":	"SW"
+							}
+						},
+						"ref":	"U5",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\TI-vreg\\src\\components\\TPS6208x.stanza",
+							"line":	104,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.ti.com/lit/ds/symlink/tps62080.pdf",
+				"manufacturer":	"Texas Instruments",
+				"mpn":	"TPS62082DSG",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"Schottky Diode",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"pwr-mng"
+											}
+										},
+										"field":	{
+											"name":	"USB-OR"
+										}
+									},
+									"field":	{
+										"name":	"U"
+									}
+								},
+								"index":	1
+							},
+							"field":	{
+								"name":	"U"
+							}
+						},
+						"ref":	"D3",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\power-systems\\src\\filters.stanza",
+							"line":	41,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"pwr-mng"
+											}
+										},
+										"field":	{
+											"name":	"USB-OR"
+										}
+									},
+									"field":	{
+										"name":	"U"
+									}
+								},
+								"index":	0
+							},
+							"field":	{
+								"name":	"U"
+							}
+						},
+						"ref":	"D2",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\power-systems\\src\\filters.stanza",
+							"line":	41,
+							"column":	2
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	"Vishay General Semiconductor",
+				"mpn":	"SSA33L-E3/61T",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"Step-down type Adjustable 3.8V~30V 3A 0.8V~22V SOT-583  DC-DC Converters ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"pwr-mng"
+										}
+									},
+									"field":	{
+										"name":	"DCDC-5V"
+									}
+								},
+								"field":	{
+									"name":	"IC"
+								}
+							},
+							"field":	{
+								"name":	"SW"
+							}
+						},
+						"ref":	"U4",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\TI-vreg\\src\\components\\TPS6293x.stanza",
+							"line":	300,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://www.ti.com/lit/ds/symlink/tps62932.pdf",
+				"manufacturer":	"Texas Instruments",
+				"mpn":	"TPS62932DRL",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"Crystal, SMT, Toleranced(11999400.0 <= 12000000.0 <= 12000600.0) Hz",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"resonator"
+								}
+							},
+							"field":	{
+								"name":	"xtal"
+							}
+						},
+						"ref":	"X1",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\jsl\\src\\circuits\\CrystalResonator.stanza",
+							"line":	67,
+							"column":	4
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	"EPSON",
+				"mpn":	"FA-238V 12.0000MB-W3",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"TERM BLK 4P TOP ENTRY 3.5MM PCB",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"core"
+								},
+								"field":	{
+									"name":	"pwr-mng"
+								}
+							},
+							"field":	{
+								"name":	"terminal-block"
+							}
+						},
+						"ref":	"J2",
+						"fileinfo":	{
+							"filename":	"src\\power.stanza",
+							"line":	89,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://catalog.weidmueller.com/procat/Group.jsp;jsessionid=2D3E17129178EB5048158C0C39D6D6A1?groupId=(%22group21472460020482%22)&page=Group",
+				"manufacturer":	"Weidmüller",
+				"mpn":	"1825660000",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}],
+		"entries":	[{
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}]
+	},
+	"metrics":	[{
+			"name":	"Line Items",
+			"value":	41
+		}, {
+			"name":	"Components",
+			"value":	74
+		}, {
+			"name":	"Cost",
+			"value":	"$8.53"
+		}],
+	"is_update":	false,
+	"old_bom":	{
+		"rows":	[{
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 4.7K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"R-t"
+							}
+						},
+						"ref":	"R11",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\FTDI\\src\\DebugIF.stanza",
+							"line":	135,
+							"column":	6
+						}
+					}],
+				"datasheet":	"https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf",
+				"manufacturer":	"BOURNS",
+				"mpn":	"CR0402-FX-4701GLF",
+				"vendor":	"Arrow",
+				"sku":	"CR0402-FX-4701GLF",
+				"price":	0.0012,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	4700,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"Ferrite, 0603, 220Ω @ 100000000000.0 Hz, 0.05 Ω DC",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"filt-VPHY"
+								}
+							},
+							"field":	{
+								"name":	"U"
+							}
+						},
+						"ref":	"L2",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\power-systems\\src\\filters.stanza",
+							"line":	41,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"filt-VPLL"
+								}
+							},
+							"field":	{
+								"name":	"U"
+							}
+						},
+						"ref":	"L1",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\power-systems\\src\\filters.stanza",
+							"line":	41,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-BLM18KG221SN1D_C88980.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"BLM18KG221SN1D",
+				"vendor":	"Arrow",
+				"sku":	"BLM18KG221SN1D",
+				"price":	0.0223,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 5.1K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"core"
+								},
+								"field":	{
+									"name":	"usb-if"
+								}
+							},
+							"field":	{
+								"name":	"CC1-R"
+							}
+						},
+						"ref":	"R2",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"core"
+								},
+								"field":	{
+									"name":	"usb-if"
+								}
+							},
+							"field":	{
+								"name":	"CC0-R"
+							}
+						},
+						"ref":	"R1",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf",
+				"manufacturer":	"BOURNS",
+				"mpn":	"CR0402-FX-5101GLF",
+				"vendor":	"Arrow",
+				"sku":	"CR0402-FX-5101GLF",
+				"price":	0.002,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.01,
+					"resistance":	5100,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"7.9V 14V 3.6V DFN-10(1x2.5)  ESD Protection Devices ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"core"
+								},
+								"field":	{
+									"name":	"usb-if"
+								}
+							},
+							"field":	{
+								"name":	"esd-prot"
+							}
+						},
+						"ref":	"U1",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\connectors\\src\\components\\USB\\USBTypeC.stanza",
+							"line":	167,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2302221330_Texas-Instruments-ESD224DQAR_C1981316.pdf",
+				"manufacturer":	"Texas Instruments",
+				"mpn":	"ESD224DQAR",
+				"vendor":	"Arrow",
+				"sku":	"ESD224DQAR",
+				"price":	0.4376,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"±5% Single 4.85V~5.36V 500mW 5.1V SOD-123  Zener Diodes ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"core"
+							},
+							"field":	{
+								"name":	"zener"
+							}
+						},
+						"ref":	"D1",
+						"fileinfo":	{
+							"filename":	"c:\\\\\\\\Users\\\\\\\\Duncan\\\\\\\\Desktop\\\\\\\\ethernet_io\\\\\\\\main.stanza",
+							"line":	18,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/1811131655_onsemi-MMSZ4689T1G_C236187.pdf",
+				"manufacturer":	"ON Semiconductor",
+				"mpn":	"MMSZ4689T1G",
+				"vendor":	"JLCPCB",
+				"sku":	"MMSZ4689T1G",
+				"price":	0.036,
+				"preferred":	false,
+				"query_properties":	{
+					"manufacturer":	"ON Semiconductor",
+					"mpn":	"MMSZ4689T1G",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"USB Type-C SMD Connectors ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"usb-if"
+									}
+								},
+								"field":	{
+									"name":	"USBC"
+								}
+							},
+							"field":	{
+								"name":	"J"
+							}
+						},
+						"ref":	"J1",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\connectors\\src\\components\\USB\\USBTypeC.stanza",
+							"line":	104,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2407021105_MOLEX-2012670005_C565324.pdf",
+				"manufacturer":	"MOLEX",
+				"mpn":	"2012670005",
+				"vendor":	"Arrow",
+				"sku":	"2012670005",
+				"price":	1.4592,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES 2K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R9",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf",
+				"manufacturer":	"SEI",
+				"mpn":	"RMCF0402FT2K00",
+				"vendor":	"Arrow",
+				"sku":	"RMCF0402FT2K00",
+				"price":	0.0027,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	2000,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"63mW Thick Film Resistors 50V ±100ppm/℃ ±1% 10kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"EEPROM"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R13",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"R-b"
+							}
+						},
+						"ref":	"R12",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\FTDI\\src\\DebugIF.stanza",
+							"line":	136,
+							"column":	6
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"do-pu"
+							}
+						},
+						"ref":	"R8",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"clk-pu"
+							}
+						},
+						"ref":	"R7",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"cs-pu"
+							}
+						},
+						"ref":	"R6",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TE-Connectivity-CRGCQ0402F10K_C2074093.pdf",
+				"manufacturer":	"TE CONNECTIVITY",
+				"mpn":	"CRGCQ0402F10K",
+				"vendor":	"Arrow",
+				"sku":	"CRGCQ0402F10K",
+				"price":	0.0647,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	10000,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 1nF X7R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"C-b"
+							}
+						},
+						"ref":	"C17",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\FTDI\\src\\DebugIF.stanza",
+							"line":	137,
+							"column":	6
+						}
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309051428_Taiyo-Yuden-UMK105B7102MVHF_C3857081.pdf",
+				"manufacturer":	"Taiyo Yuden  Inc",
+				"mpn":	"UMK105B7102MVHF",
+				"vendor":	"Arrow",
+				"sku":	"UMK105B7102MVHF",
+				"price":	0.0008,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-voltage":	10,
+					"capacitance":	1e-09,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thick Film Resistors ±100ppm/℃ ±1% 12kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R4",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404101533_YAGEO-RC0402FR-1312KL_C4167915.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RC0402FR-1312KL",
+				"vendor":	"Arrow",
+				"sku":	"RC0402FR-1312KL",
+				"price":	0.0019,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.01,
+					"resistance":	12000,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"ctl"
+											}
+										},
+										"field":	{
+											"name":	"debug-if"
+										}
+									},
+									"field":	{
+										"name":	"ftdi"
+									}
+								},
+								"field":	{
+									"name":	"VPLL-byp"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C14",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"ctl"
+											}
+										},
+										"field":	{
+											"name":	"debug-if"
+										}
+									},
+									"field":	{
+										"name":	"ftdi"
+									}
+								},
+								"field":	{
+									"name":	"VPHY-byp"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C12",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCCIO[3]-byp"
+							}
+						},
+						"ref":	"C10",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCCIO[2]-byp"
+							}
+						},
+						"ref":	"C9",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCCIO[1]-byp"
+							}
+						},
+						"ref":	"C8",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCCIO[0]-byp"
+							}
+						},
+						"ref":	"C7",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCORE[2]-byp"
+							}
+						},
+						"ref":	"C6",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCORE[1]-byp"
+							}
+						},
+						"ref":	"C5",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VCORE[0]-byp"
+							}
+						},
+						"ref":	"C4",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VREGIN-byp"
+							}
+						},
+						"ref":	"C2",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://api.kemet.com/component-edge/download/datasheet/C0402C104M8RACTU.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"C0402C104M8RACTU",
+				"vendor":	"Arrow",
+				"sku":	"C0402C104M8RACTU",
+				"price":	0.0415,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	1e-07,
+					"min-rated-voltage":	6.6,
+					"max-rated-voltage":	16,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 4.7nF X7R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"usb-if"
+									}
+								},
+								"field":	{
+									"name":	"shield-term"
+								}
+							},
+							"field":	{
+								"name":	"C"
+							}
+						},
+						"ref":	"C1",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2211282000_Taiyo-Yuden-UMK105B7472MV-F_C2183859.pdf",
+				"manufacturer":	"Taiyo Yuden  Inc",
+				"mpn":	"UMK105B7472MV-F",
+				"vendor":	"Arrow",
+				"sku":	"UMK105B7472MV-F",
+				"price":	0.016,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	4.7e-09,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	6,
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"6.3V 2.2uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"EEPROM"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"C18",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2407081117_YAGEO-CC0402MRX5R5BB225_C106860.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"CC0402MRX5R5BB225",
+				"vendor":	"Arrow",
+				"sku":	"CC0402MRX5R5BB225",
+				"price":	0.0047,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	2.2e-06,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	6,
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 13pF C0G ±5% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"ctl"
+											}
+										},
+										"field":	{
+											"name":	"debug-if"
+										}
+									},
+									"field":	{
+										"name":	"resonator"
+									}
+								},
+								"field":	{
+									"name":	"load-caps"
+								}
+							},
+							"index":	1
+						},
+						"ref":	"C16",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\jsl\\src\\circuits\\CrystalResonator.stanza",
+							"line":	81,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"ctl"
+											}
+										},
+										"field":	{
+											"name":	"debug-if"
+										}
+									},
+									"field":	{
+										"name":	"resonator"
+									}
+								},
+								"field":	{
+									"name":	"load-caps"
+								}
+							},
+							"index":	0
+						},
+						"ref":	"C15",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\jsl\\src\\circuits\\CrystalResonator.stanza",
+							"line":	81,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/1810261546_Samsung-Electro-Mechanics-CL10C130JB8NNNC_C170137.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL10C130JB8NNNC",
+				"vendor":	"Arrow",
+				"sku":	"CL10C130JB8NNNC",
+				"price":	0.0024,
+				"preferred":	false,
+				"query_properties":	{
+					"tolerance":	0.05,
+					"capacitance":	1.3000000000000015e-11,
+					"_sort":	["rated-voltage"],
+					"temperature-coefficient.code":	"C0G",
+					"min-rated-voltage":	6.6,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"category":	"capacitor",
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW ±300ppm/℃ ±1% 0Ω 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R10",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"debug-if"
+								}
+							},
+							"field":	{
+								"name":	"element"
+							}
+						},
+						"ref":	"R5",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"usb-if"
+									}
+								},
+								"field":	{
+									"name":	"shield-term"
+								}
+							},
+							"field":	{
+								"name":	"R"
+							}
+						},
+						"ref":	"R3",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2207281800_Sunway-SC0402F0000I2ANRH_C3152056.pdf",
+				"manufacturer":	"Sunway",
+				"mpn":	"SC0402F0000I2ANRH",
+				"vendor":	"JLCPCB",
+				"sku":	"SC0402F0000I2ANRH",
+				"price":	0.000357143,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	0,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"10V 4.7uF X5R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"ctl"
+											}
+										},
+										"field":	{
+											"name":	"debug-if"
+										}
+									},
+									"field":	{
+										"name":	"ftdi"
+									}
+								},
+								"field":	{
+									"name":	"VPLL-byp"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C13",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"ref":	{
+												"name":	"core"
+											},
+											"field":	{
+												"name":	"ctl"
+											}
+										},
+										"field":	{
+											"name":	"debug-if"
+										}
+									},
+									"field":	{
+										"name":	"ftdi"
+									}
+								},
+								"field":	{
+									"name":	"VPHY-byp"
+								}
+							},
+							"field":	{
+								"name":	"elem"
+							}
+						},
+						"ref":	"C11",
+						"fileinfo":	null
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"VREGOUT-byp"
+							}
+						},
+						"ref":	"C3",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A475MP5NRNC_C23733.pdf",
+				"manufacturer":	"Samsung Electro-Mechanics",
+				"mpn":	"CL05A475MP5NRNC",
+				"vendor":	"Arrow",
+				"sku":	"CL05A475MP5NRNC",
+				"price":	0.0062,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	4.7e-06,
+					"min-rated-voltage":	6.6,
+					"max-rated-voltage":	16,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"ftdi"
+								}
+							},
+							"field":	{
+								"name":	"C"
+							}
+						},
+						"ref":	"U2",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\FTDI\\src\\components\\FT2232HL.stanza",
+							"line":	170,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://ftdichip.com/wp-content/uploads/2024/05/DS_FT2232H.pdf",
+				"manufacturer":	"Future Technology Devices International",
+				"mpn":	"FT2232HL",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"Crystal, SMT, Toleranced(11999400.0 <= 12000000.0 <= 12000600.0) Hz",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"ref":	{
+											"name":	"core"
+										},
+										"field":	{
+											"name":	"ctl"
+										}
+									},
+									"field":	{
+										"name":	"debug-if"
+									}
+								},
+								"field":	{
+									"name":	"resonator"
+								}
+							},
+							"field":	{
+								"name":	"xtal"
+							}
+						},
+						"ref":	"X1",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\Duncan\\Desktop\\ethernet_io\\.slm\\deps\\jsl\\src\\circuits\\CrystalResonator.stanza",
+							"line":	67,
+							"column":	4
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	"EPSON",
+				"mpn":	"FA-238V 12.0000MB-W3",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"1K 2.5V Microwire Serial EEPROM, SOIC-8 Package",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"core"
+									},
+									"field":	{
+										"name":	"ctl"
+									}
+								},
+								"field":	{
+									"name":	"EEPROM"
+								}
+							},
+							"field":	{
+								"name":	"EEPROM"
+							}
+						},
+						"ref":	"U3",
+						"fileinfo":	{
+							"filename":	"src\\components\\MC-93LC46CT.stanza",
+							"line":	47,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://ww1.microchip.com/downloads/en/DeviceDoc/20001749K.pdf",
+				"manufacturer":	"Microchip Technology",
+				"mpn":	"93LC46CT-I/SN",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}],
+		"entries":	[{
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}]
+	}
+}

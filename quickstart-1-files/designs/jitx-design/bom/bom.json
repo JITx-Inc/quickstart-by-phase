@@ -66,40 +66,9 @@
 					"resistance":	10000,
 					"tolerance":	0.01,
 					"category":	"resistor",
-					"mounting":	"smd",
+					"_sort":	["area"],
 					"case":	["0402", "0603"],
-					"min-stock":	1,
-					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
-				}
-			}, {
-				"status":	{
-					"code":	1,
-					"name":	"Auto Selected"
-				},
-				"description":	"CAP CER 0.1UF 10V X5R 0402",
-				"insts":	[{
-						"inst":	{
-							"name":	"element"
-						},
-						"ref":	"C1",
-						"fileinfo":	null
-					}],
-				"datasheet":	"https://datasheets.avx.com/cx5r.pdf",
-				"manufacturer":	"KYOCERA AVX",
-				"mpn":	"0402ZD104KAT4A",
-				"vendor":	"Arrow",
-				"sku":	"0402ZD104KAT4A",
-				"price":	0.0014,
-				"preferred":	false,
-				"query_properties":	{
-					"capacitance":	1e-07,
-					"tolerance":	0.1,
-					"type":	"ceramic",
-					"temperature-coefficient.code":	["X7R", "X5R"],
-					"min-rated-voltage":	6,
-					"category":	"capacitor",
 					"mounting":	"smd",
-					"case":	["0402", "0603"],
 					"min-stock":	1,
 					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
 				}
@@ -121,14 +90,48 @@
 				"mpn":	"CR0402-FX-2202GLF",
 				"vendor":	"Arrow",
 				"sku":	"CR0402-FX-2202GLF",
-				"price":	0.0384,
+				"price":	0.0417,
 				"preferred":	false,
 				"query_properties":	{
 					"resistance":	22000,
 					"tolerance":	0.01,
 					"category":	"resistor",
-					"mounting":	"smd",
+					"_sort":	["area"],
 					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 100nF X7R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"name":	"element"
+						},
+						"ref":	"C1",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308111600_Murata-Electronics-GCM155R71H104ME02D_C710666.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"GCM155R71H104ME02D",
+				"vendor":	"Arrow",
+				"sku":	"GCM155R71H104ME02D",
+				"price":	0.0058,
+				"preferred":	false,
+				"query_properties":	{
+					"capacitance":	1e-07,
+					"tolerance.max":	0.2,
+					"type":	"ceramic",
+					"temperature-coefficient.code":	["X7R", "X5R"],
+					"min-rated-voltage":	6,
+					"category":	"capacitor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
 					"min-stock":	1,
 					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
 				}
@@ -146,7 +149,7 @@
 			"value":	3
 		}, {
 			"name":	"Cost",
-			"value":	"$0.10"
+			"value":	"$0.11"
 		}],
 	"is_update":	false,
 	"old_bom":	{
@@ -174,8 +177,9 @@
 					"resistance":	10000,
 					"tolerance":	0.01,
 					"category":	"resistor",
-					"mounting":	"smd",
+					"_sort":	["area"],
 					"case":	["0402", "0603"],
+					"mounting":	"smd",
 					"min-stock":	1,
 					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
 				}
@@ -184,7 +188,37 @@
 					"code":	1,
 					"name":	"Auto Selected"
 				},
-				"description":	"CAP CER 0.1UF 10V X5R 0402",
+				"description":	"RES SMD 22K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"name":	"element"
+						},
+						"ref":	"R2",
+						"fileinfo":	null
+					}],
+				"datasheet":	"https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf",
+				"manufacturer":	"BOURNS",
+				"mpn":	"CR0402-FX-2202GLF",
+				"vendor":	"Arrow",
+				"sku":	"CR0402-FX-2202GLF",
+				"price":	0.0417,
+				"preferred":	false,
+				"query_properties":	{
+					"resistance":	22000,
+					"tolerance":	0.01,
+					"category":	"resistor",
+					"_sort":	["area"],
+					"case":	["0402", "0603"],
+					"mounting":	"smd",
+					"min-stock":	1,
+					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"50V 100nF X7R ±20% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
 				"insts":	[{
 						"inst":	{
 							"name":	"element"
@@ -192,27 +226,29 @@
 						"ref":	"C1",
 						"fileinfo":	null
 					}],
-				"datasheet":	"https://datasheets.avx.com/cx5r.pdf",
-				"manufacturer":	"KYOCERA AVX",
-				"mpn":	"0402ZD104KAT4A",
+				"datasheet":	"https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308111600_Murata-Electronics-GCM155R71H104ME02D_C710666.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"GCM155R71H104ME02D",
 				"vendor":	"Arrow",
-				"sku":	"0402ZD104KAT4A",
-				"price":	0.0014,
+				"sku":	"GCM155R71H104ME02D",
+				"price":	0.0058,
 				"preferred":	false,
 				"query_properties":	{
 					"capacitance":	1e-07,
-					"tolerance":	0.1,
+					"tolerance.max":	0.2,
 					"type":	"ceramic",
 					"temperature-coefficient.code":	["X7R", "X5R"],
 					"min-rated-voltage":	6,
 					"category":	"capacitor",
-					"mounting":	"smd",
+					"_sort":	["area"],
 					"case":	["0402", "0603"],
+					"mounting":	"smd",
 					"min-stock":	1,
 					"_sellers":	["Arrow", "Avnet", "DigiKey", "JLCPCB", "LCSC", "Mouser", "Newark"]
 				}
 			}],
 		"entries":	[{
+			}, {
 			}, {
 			}]
 	}

@@ -1,0 +1,350 @@
+
+(kicad_sch
+  (version 20230121)
+  (generator jitx)
+  (uuid 219df102-d28d-b743-245e-efc9439ef913)
+  (paper "A")
+  
+  
+  (lib_symbols 
+
+    (symbol "GND" (power)
+      (in_bom yes) (on_board yes)
+      
+      (property "Reference" "#PWR" (id 0) (at 35.0 60.0 0.0)
+        (effects (font (size 5.0 5.0))  (justify left bottom )))
+      
+      (property "Value" "GND" (id 1) (at 0.0 -2.6035 0.0)
+        (effects (font (size 0.508 0.508))  (justify top )))
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      
+(symbol "GND_1_0"
+
+      (pin power_in line (at 0.0 0.0 270) (length 0.0)
+        (name "GND" (effects (font (size 0.0 0.0))))
+        (number "~" (effects (font (size 0.0 0.0))))
+      )
+      (polyline (pts (xy 0.0 0.0) (xy 0.0 -1.27)) (stroke (width 0.127) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy -1.27 -1.27) (xy 1.27 -1.27)) (stroke (width 0.127) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy -0.762 -1.778) (xy 0.762 -1.778)) (stroke (width 0.127) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy -0.254 -2.286) (xy 0.254 -2.286)) (stroke (width 0.127) (type solid) (color 0 0 0 0)) (fill (type background)))
+)
+    )
+
+    (symbol "VDD" (power)
+      (in_bom yes) (on_board yes)
+      
+      (property "Reference" "#PWR" (id 0) (at 35.0 60.0 0.0)
+        (effects (font (size 5.0 5.0))  (justify left bottom )))
+      
+      (property "Value" "VDD" (id 1) (at 0.0 1.5875 0.0)
+        (effects (font (size 0.508 0.508))  (justify bottom )))
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      
+(symbol "VDD_1_0"
+
+      (pin power_in line (at 0.0 0.0 90) (length 0.0)
+        (name "VDD" (effects (font (size 0.0 0.0))))
+        (number "~" (effects (font (size 0.0 0.0))))
+      )
+      (polyline (pts (xy 0.0 0.0) (xy 0.0 1.27)) (stroke (width 0.127) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy -1.905 1.27) (xy 1.905 1.27)) (stroke (width 0.127) (type solid) (color 0 0 0 0)) (fill (type background)))
+)
+    )
+
+    (symbol "resistor_sym" 
+      (in_bom yes) (on_board yes)
+      
+      (property "Reference" "U" (id 0) (at 1.27 1.27 0.0)
+        (effects (font (size 0.508 0.508))  (justify left )))
+      
+      (property "Value" "resistor_sym" (id 1) (at 1.27 -1.27 0.0)
+        (effects (font (size 0.508 0.508))  (justify left )))
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      
+(symbol "resistor_sym_1_0"
+
+      (pin unspecified line (at 0.0 2.54 270) (length 0.0)
+        (name "1" (effects (font (size 0.0 0.0))))
+        (number "~" (effects (font (size 0.0 0.0))))
+      )
+
+      (pin unspecified line (at 0.0 -2.54 90) (length 0.0)
+        (name "2" (effects (font (size 0.0 0.0))))
+        (number "~" (effects (font (size 0.0 0.0))))
+      )
+      (polyline (pts (xy 0.0 -2.54) (xy 0.0 -1.5875)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy 0.0 -1.5875) (xy -0.762 -1.27)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))       (polyline (pts (xy -0.762 -1.27) (xy 0.762 -0.635)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))       (polyline (pts (xy 0.762 -0.635) (xy -0.762 0.0)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))       (polyline (pts (xy -0.762 0.0) (xy 0.762 0.635)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))       (polyline (pts (xy 0.762 0.635) (xy -0.762 1.27)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))       (polyline (pts (xy -0.762 1.27) (xy 0.0 1.5875)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy 0.0 1.5875) (xy 0.0 2.54)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+)
+    )
+
+    (symbol "Power_Symbol" 
+      (in_bom yes) (on_board yes)
+      
+      (property "Reference" "U" (id 0) (at 0.0 0.0 0.0)
+        (effects (font (size 10.0 10.0)) hide ))
+      
+      (property "Value" "Power_Symbol" (id 1) (at 0.0 1.5875 0.0)
+        (effects (font (size 0.508 0.508))  (justify bottom )))
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      
+(symbol "Power_Symbol_1_0"
+
+      (pin unspecified line (at 0.0 0.0 90) (length 0.0)
+        (name "0" (effects (font (size 0.0 0.0))))
+        (number "~" (effects (font (size 0.0 0.0))))
+      )
+      (polyline (pts (xy 0.0 0.0) (xy 0.0 1.27)) (stroke (width 0.127) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy -1.905 1.27) (xy 1.905 1.27)) (stroke (width 0.127) (type solid) (color 0 0 0 0)) (fill (type background)))
+)
+    )
+
+    (symbol "Ground_Symbol" 
+      (in_bom yes) (on_board yes)
+      
+      (property "Reference" "U" (id 0) (at 0.0 0.0 0.0)
+        (effects (font (size 10.0 10.0)) hide ))
+      
+      (property "Value" "Ground_Symbol" (id 1) (at 0.0 -2.6035 0.0)
+        (effects (font (size 0.508 0.508))  (justify top )))
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      
+(symbol "Ground_Symbol_1_0"
+
+      (pin unspecified line (at 0.0 0.0 270) (length 0.0)
+        (name "0" (effects (font (size 0.0 0.0))))
+        (number "~" (effects (font (size 0.0 0.0))))
+      )
+      (polyline (pts (xy 0.0 0.0) (xy 0.0 -1.27)) (stroke (width 0.127) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy -1.27 -1.27) (xy 1.27 -1.27)) (stroke (width 0.127) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy -0.762 -1.778) (xy 0.762 -1.778)) (stroke (width 0.127) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy -0.254 -2.286) (xy 0.254 -2.286)) (stroke (width 0.127) (type solid) (color 0 0 0 0)) (fill (type background)))
+)
+    )
+
+    (symbol "capacitor_sym" 
+      (in_bom yes) (on_board yes)
+      
+      (property "Reference" "U" (id 0) (at 1.27 1.27 0.0)
+        (effects (font (size 0.508 0.508))  (justify left )))
+      
+      (property "Value" "capacitor_sym" (id 1) (at 1.27 -1.27 0.0)
+        (effects (font (size 0.508 0.508))  (justify left )))
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      
+(symbol "capacitor_sym_1_0"
+
+      (pin unspecified line (at 0.0 2.54 270) (length 0.0)
+        (name "1" (effects (font (size 0.0 0.0))))
+        (number "~" (effects (font (size 0.0 0.0))))
+      )
+
+      (pin unspecified line (at 0.0 -2.54 90) (length 0.0)
+        (name "2" (effects (font (size 0.0 0.0))))
+        (number "~" (effects (font (size 0.0 0.0))))
+      )
+      (polyline (pts (xy 0.0 2.54) (xy 0.0 0.508)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy -1.27 0.508) (xy 1.27 0.508)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy 0.0 -0.508) (xy 0.0 -2.54)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy -1.27 -0.508) (xy 1.27 -0.508)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+)
+    )
+
+    (symbol "my_resistor" 
+      (in_bom yes) (on_board yes)
+      
+      (property "Reference" "R" (id 0) (at 1.27 1.27 0.0)
+        (effects (font (size 0.508 0.508))  (justify left )))
+      
+      (property "Value" "my_resistor" (id 1) (at 1.27 -1.27 0.0)
+        (effects (font (size 0.508 0.508))  (justify left )))
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      
+(symbol "my_resistor_1_0"
+
+      (pin unspecified line (at 0.0 2.54 270) (length 0.0)
+        (name "1" (effects (font (size 0.0 0.0))))
+        (number "1" (effects (font (size 0.0 0.0))))
+      )
+
+      (pin unspecified line (at 0.0 -2.54 90) (length 0.0)
+        (name "2" (effects (font (size 0.0 0.0))))
+        (number "2" (effects (font (size 0.0 0.0))))
+      )
+      (polyline (pts (xy 0.0 -2.54) (xy 0.0 -1.5875)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy 0.0 -1.5875) (xy -0.762 -1.27)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))       (polyline (pts (xy -0.762 -1.27) (xy 0.762 -0.635)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))       (polyline (pts (xy 0.762 -0.635) (xy -0.762 0.0)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))       (polyline (pts (xy -0.762 0.0) (xy 0.762 0.635)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))       (polyline (pts (xy 0.762 0.635) (xy -0.762 1.27)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))       (polyline (pts (xy -0.762 1.27) (xy 0.0 1.5875)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy 0.0 1.5875) (xy 0.0 2.54)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+)
+    )
+
+    (symbol "my_capacitor" 
+      (in_bom yes) (on_board yes)
+      
+      (property "Reference" "C" (id 0) (at 1.27 1.27 0.0)
+        (effects (font (size 0.508 0.508))  (justify left )))
+      
+      (property "Value" "my_capacitor" (id 1) (at 1.27 -1.27 0.0)
+        (effects (font (size 0.508 0.508))  (justify left )))
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 0.635 0.635)) hide))
+      
+(symbol "my_capacitor_1_0"
+
+      (pin unspecified line (at 0.0 2.54 270) (length 0.0)
+        (name "1" (effects (font (size 0.0 0.0))))
+        (number "1" (effects (font (size 0.0 0.0))))
+      )
+
+      (pin unspecified line (at 0.0 -2.54 90) (length 0.0)
+        (name "2" (effects (font (size 0.0 0.0))))
+        (number "2" (effects (font (size 0.0 0.0))))
+      )
+      (polyline (pts (xy 0.0 2.54) (xy 0.0 0.508)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy -1.27 0.508) (xy 1.27 0.508)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy 0.0 -0.508) (xy 0.0 -2.54)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+      (polyline (pts (xy -1.27 -0.508) (xy 1.27 -0.508)) (stroke (width 0.254) (type solid) (color 0 0 0 0)) (fill (type background)))
+)
+    )
+  )
+  (wire (pts (xy 142.24 90.17) (xy 142.24 88.9)) (stroke (width 0.127) (type default) (color 0 0 0 0)) (uuid 68ea4415-fc87-c777-5cd9-5a18556d2542))
+  (wire (pts (xy 130.81 88.9) (xy 130.81 87.63)) (stroke (width 0.127) (type default) (color 0 0 0 0)) (uuid f8c10b20-cbc7-2f25-0100-fa86a20e3491))
+  (wire (pts (xy 130.81 95.25) (xy 130.81 93.98)) (stroke (width 0.127) (type default) (color 0 0 0 0)) (uuid 62e125b0-a100-8015-75f5-1f8c5648a939))
+  (polyline (pts (xy 125.73 81.28) (xy 151.13 81.28)) (stroke (width 0.127) (type dot) (color 0 0 0 0)) (uuid 3f3077af-10d3-3f45-69f8-5a4ec4a3f964))
+  (polyline (pts (xy 125.73 102.87) (xy 151.13 102.87)) (stroke (width 0.127) (type dot) (color 0 0 0 0)) (uuid 769e5753-ecff-ff7d-9bbd-16372ff6c879))
+  (polyline (pts (xy 125.73 102.87) (xy 125.73 81.28)) (stroke (width 0.127) (type dot) (color 0 0 0 0)) (uuid 7821f7a4-2252-574c-ca60-454d6810d138))
+  (polyline (pts (xy 151.13 102.87) (xy 151.13 81.28)) (stroke (width 0.127) (type dot) (color 0 0 0 0)) (uuid eaa54a66-2ef3-f9f9-2de2-c2b1b388013e))
+
+  (text "jitx-design" (at 125.73 81.28 0)
+    (effects (font (size 0.762 0.762)) (justify left bottom ))
+    (uuid 27564917-eb46-5190-1aa0-82aeb524e22f)
+  )
+
+  (label "SIGNAL" (at 142.24 95.25 270)
+    (effects (font (size 0.762 0.762)) (justify right bottom ))
+    (uuid 32b7c463-5369-230f-eac9-c2e9c843f497)
+  )
+
+  (symbol (lib_id "my_resistor") (at 142.24 92.71 0.0)  (unit 1)
+    (in_bom yes) (on_board yes) 
+    (uuid 946bb78e-67e3-a6d8-7389-fdd1affa711a)
+    (property "Reference" "R1" (id 0) (at 143.51 91.44 0.0) (effects (font (size 0.762 0.762)) (justify left )))
+    (property "Value" "10K" (id 1) (at 143.51 93.98 0.0) (effects (font (size 0.762 0.762)) (justify left )))
+    (property "Footprint" "jitx-design:Pkg0402" (id 2) (at 142.24 92.71 0.0) (effects (font (size 0.762 0.762)) hide))
+    (property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TE-Connectivity-CRGCQ0402F10K_C2074093.pdf" (id 3) (at 142.24 92.71 0.0) (effects (font (size 0.762 0.762)) hide))
+      (property "Name" "element" (id 4) (at 142.24 92.71 0.0) (effects (font (size 0.762 0.762)) hide))
+      (property "Description" "63mW Thick Film Resistors 50V ±100ppm/℃ ±1% 10kΩ 0402  Chip Resistor - Surface Mount ROHS" (id 5) (at 142.24 92.71 0.0) (effects (font (size 0.762 0.762)) hide))
+      (property "Manufacturer" "TE CONNECTIVITY" (id 6) (at 142.24 92.71 0.0) (effects (font (size 0.762 0.762)) hide))
+      (property "MPN" "CRGCQ0402F10K" (id 7) (at 142.24 92.71 0.0) (effects (font (size 0.762 0.762)) hide))
+      (property "Reference-prefix" "R" (id 8) (at 142.24 92.71 0.0) (effects (font (size 0.762 0.762)) hide))
+    
+    (pin "1" (uuid 53811e8e-94da-3f94-4f74-68543406f5d1))
+    (pin "2" (uuid 0028a3d3-dc29-2665-6960-d1081c2e160f))
+    (instances
+      (project "jitx-design"
+        (path "/219df102-d28d-b743-245e-efc9439ef913"
+          (reference "R1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "my_capacitor") (at 130.81 91.44 0.0)  (unit 1)
+    (in_bom yes) (on_board yes) 
+    (uuid d7441fd9-ed4a-242a-26d5-ffd378bc50a1)
+    (property "Reference" "C1" (id 0) (at 132.08 90.17 0.0) (effects (font (size 0.762 0.762)) (justify left )))
+    (property "Value" "100n" (id 1) (at 132.08 92.71 0.0) (effects (font (size 0.762 0.762)) (justify left )))
+    (property "Footprint" "jitx-design:Pkg0402_1" (id 2) (at 130.81 91.44 0.0) (effects (font (size 0.762 0.762)) hide))
+    (property "Datasheet" "https://datasheets.avx.com/cx5r.pdf" (id 3) (at 130.81 91.44 0.0) (effects (font (size 0.762 0.762)) hide))
+      (property "Name" "element" (id 4) (at 130.81 91.44 0.0) (effects (font (size 0.762 0.762)) hide))
+      (property "Description" "CAP CER 0.1UF 10V X5R 0402" (id 5) (at 130.81 91.44 0.0) (effects (font (size 0.762 0.762)) hide))
+      (property "Manufacturer" "KYOCERA AVX" (id 6) (at 130.81 91.44 0.0) (effects (font (size 0.762 0.762)) hide))
+      (property "MPN" "0402ZD104KAT4A" (id 7) (at 130.81 91.44 0.0) (effects (font (size 0.762 0.762)) hide))
+      (property "Reference-prefix" "C" (id 8) (at 130.81 91.44 0.0) (effects (font (size 0.762 0.762)) hide))
+    
+    (pin "1" (uuid 2b82050b-3d81-13a1-2b08-cbb7a2459793))
+    (pin "2" (uuid dc2b5ec4-2ac5-053c-1694-b7f273fbb947))
+    (instances
+      (project "jitx-design"
+        (path "/219df102-d28d-b743-245e-efc9439ef913"
+          (reference "C1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "VDD") (at 142.24 88.9 0.0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid abc48612-1ac1-03ab-6184-955945243d23)
+    (property "Reference" "#PWR?" (id 0) (at 142.24 88.9 0) (effects hide))
+    (property "Value" "VDD" (id 1) (at 142.24 87.3125 0.0) (effects (font (size 0.762 0.762))))
+    (property "Footprint" "" (id 2) (effects (font (size 0.762 0.762)) hide))
+    (property "Datasheet" "" (id 3) (effects (font (size 0.762 0.762)) hide))
+    (pin "~" (uuid fbc91465-1531-c176-c792-61d6b349ddfe))
+    (instances
+      (project "jitx-design"
+        (path "/219df102-d28d-b743-245e-efc9439ef913"
+          (reference "#PWR?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "VDD") (at 130.81 87.63 0.0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 4bb72a17-ee1b-95d1-05c0-359aef2aa898)
+    (property "Reference" "#PWR?" (id 0) (at 130.81 87.63 0) (effects hide))
+    (property "Value" "VDD" (id 1) (at 130.81 86.0425 0.0) (effects (font (size 0.762 0.762))))
+    (property "Footprint" "" (id 2) (effects (font (size 0.762 0.762)) hide))
+    (property "Datasheet" "" (id 3) (effects (font (size 0.762 0.762)) hide))
+    (pin "~" (uuid fed82206-8221-53f2-4dfb-c3d65e3bc691))
+    (instances
+      (project "jitx-design"
+        (path "/219df102-d28d-b743-245e-efc9439ef913"
+          (reference "#PWR?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "GND") (at 130.81 95.25 0.0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid dcecd43d-0418-307d-0311-0e3522554b38)
+    (property "Reference" "#PWR?" (id 0) (at 130.81 95.25 0) (effects hide))
+    (property "Value" "GND" (id 1) (at 130.81 97.8535 0.0) (effects (font (size 0.762 0.762))))
+    (property "Footprint" "" (id 2) (effects (font (size 0.762 0.762)) hide))
+    (property "Datasheet" "" (id 3) (effects (font (size 0.762 0.762)) hide))
+    (pin "~" (uuid a387c7ab-4203-205b-992b-8c7d252cf306))
+    (instances
+      (project "jitx-design"
+        (path "/219df102-d28d-b743-245e-efc9439ef913"
+          (reference "#PWR?") (unit 1)
+        )
+      )
+    )
+  )
+  
+)

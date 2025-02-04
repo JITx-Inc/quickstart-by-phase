@@ -18,9 +18,7 @@ public pcb-module controller :
   inst debug-if : FTDI/DebugIF/circuit(
     FTDI/components/FT2232HL/FT2232H-MPSSE,
     FTDI/components/FT2232HL/FT2232H-RS232,
-    R-query = R-query,
-    C-query = C-query
-    )
+  )
 
   net (rail-3v3 debug-if.VDD-3v3)
   net (VDD-USB debug-if.VDD-USB)

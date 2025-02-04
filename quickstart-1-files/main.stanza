@@ -7,7 +7,7 @@ defpackage main :
   import jitx/parts
 
   import helpers
-  import jsl/symbols/net-symbols
+  import jsl
 
 ; Define the shape/size of the board
 val board-shape = RoundedRectangle(30.0, 18.5, 0.25)

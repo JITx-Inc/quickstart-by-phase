@@ -7,7 +7,7 @@ defpackage main :
   import jitx/parts
 
   import helpers
-  import jsl/symbols/net-symbols
+  import jsl
 
   import ethernet-io/controller
   import ethernet-io/power
@@ -16,6 +16,9 @@ defpackage main :
 val board-shape = RoundedRectangle(100.0, 70.0, 3.0)
 
 pcb-module communications-core :
+  port rail-3v3 : power
+
+  inst pwr-mng : power-management
   inst zener : create-part(mpn = "MMSZ4689T1G", manufacturer = "ON Semiconductor")
   public inst usb-if : connectors/components/USB/USBTypeC/USBC-HighSpeed-Iface()
 
@@ -23,15 +26,16 @@ pcb-module communications-core :
   net (zener.K usb-if.VDD-USB.V+)
 
   inst ctl : controller
-  inst pwr-mng : power-management
 
-  net (pwr-mng.VDD-3v3 ctl.rail-3v3)
   net usb-data (ctl.USB usb-if.USB)
-  net (ctl.VDD-USB usb-if.VDD-USB pwr-mng.VDD-USB)
+  net (ctl.VDD-USB usb-if.VDD-USB)
 
   net VBUS (ctl.VDD-USB.V+)
   public net P3V3 (ctl.rail-3v3.V+)
   public net GND (ctl.rail-3v3.V-)
+
+  net (pwr-mng.VDD-3v3 rail-3v3 ctl.rail-3v3)
+  net (pwr-mng.VDD-USB usb-if.VDD-USB ctl.VDD-USB)
 
   symbol(GND) = GND-SYMB
   symbol(VBUS) = PWR-SYMB
@@ -42,10 +46,10 @@ pcb-module top-level :
   inst core : communications-core
   place(core.usb-if.USBC.J) at loc(10.0, -30.5) on Top
 
-  geom(core.GND) :
+  geom(core.GND):
     copper-pour(LayerIndex(1), isolate = 0.125, rank = 1) = board-shape
     copper-pour(LayerIndex(2), isolate = 0.125, rank = 1) = board-shape
-  geom(core.P3V3) :
+  geom(core.P3V3):
     copper-pour(LayerIndex(3), isolate = 0.125, rank = 1) = board-shape
 ; Set the :
 ;     design-name     - a directory with this name will be created in the "designs" directory

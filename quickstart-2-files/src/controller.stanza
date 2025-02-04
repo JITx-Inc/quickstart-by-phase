@@ -10,21 +10,19 @@ defpackage ethernet-io/controller :
   import jsl
 
 public pcb-module controller :
+  name = "MCU"
   port rail-3v3 : power
   port USB : usb-data
   port VDD-USB : power
 
-  name = "MCU"
   inst debug-if : FTDI/DebugIF/circuit(
     FTDI/components/FT2232HL/FT2232H-MPSSE,
-    FTDI/components/FT2232HL/FT2232H-RS232,
-    R-query = R-query,
-    C-query = C-query
+    FTDI/components/FT2232HL/FT2232H-RS232
     )
-
-  net (rail-3v3 debug-if.VDD-3v3)
-  net (VDD-USB debug-if.VDD-USB)
-  net (USB debug-if.USB)
+  
+  net (debug-if.VDD-USB VDD-USB)
+  net (debug-if.VDD-3v3 rail-3v3)
+  net (debug-if.USB USB)
 
   inst EEPROM : components/MC-93LC46CT/module
   net (EEPROM.VDD-3v3 rail-3v3)

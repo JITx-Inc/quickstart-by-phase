@@ -7,7 +7,7 @@ defpackage main :
   import jitx/parts
 
   import helpers
-  import jsl/symbols/net-symbols
+  import jsl
 
   import ethernet-io/controller
 
@@ -17,7 +17,6 @@ val board-shape = RoundedRectangle(30.0, 18.5, 0.25)
 pcb-module communications-core :
   inst zener : create-part(mpn = "MMSZ4689T1G", manufacturer = "ON Semiconductor")
   inst usb-if : connectors/components/USB/USBTypeC/USBC-HighSpeed-Iface()
-
   net (zener.A usb-if.VDD-USB.V-)
   net (zener.K usb-if.VDD-USB.V+)
 
